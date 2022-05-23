@@ -46,7 +46,7 @@ The app can be run in both local and via Docker.
   
 
 ```bash
-git clone git@github.com:organization/project-name.git
+git@github.com:tarique313/campaign-api.git
 ```
 
   
