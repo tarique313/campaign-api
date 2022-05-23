@@ -46,9 +46,7 @@ The app can be run in both local and via Docker.
   
 
 ```bash
-
 git clone git@github.com:organization/project-name.git
-
 ```
 
   
@@ -57,9 +55,7 @@ git clone git@github.com:organization/project-name.git
 
 You can find a .env file in the project's root directory. Create a .env file if the file is not present. Enter your Postgresql database username and password.
 
-  
-
-```bash
+```ruby
 
 DB_USERNAME:<your_postgresql_username>
 
@@ -73,16 +69,13 @@ DB_USER_PASSWORD=<your_postgresql_password>
 
 Run <code>bundle install</code> to install gem files. If you encounter Ruby version mismatch error, change the the ruby version with the Ruby version installed in your machine. To do that, you will find Ruby version mentioned in <code>Gemfile</code> and <code>.ruby-version</code> files. Both files can be found in project's root directory.
 
-  
-  
-
 ##### 1.4 Create and Seed the Database
 
   
 
 Run the following commands to create development and test databases. The second command is for migration and the third command is for generating seed data.
 
-```bash
+```ruby
 
 rails db:create
 
@@ -94,6 +87,8 @@ rails db:seed
 
 
 ##### 1.5. Start the Rails server
+
+  
 
 You can start the rails server using the command given below.
 
