@@ -18,9 +18,9 @@ The setups steps expect following tools installed on the system.
 
 - Docker
 
-- Ruby [3.0.2](https://www.ruby-lang.org/en/news/2021/07/07/ruby-3-0-2-released/)
+- Ruby [3.0.3](https://www.ruby-lang.org/en/news/2021/11/24/ruby-3-0-3-released/)
 
-- Rails [6](https://edgeguides.rubyonrails.org/6_0_release_notes.html)
+- Rails [7.0.3](https://rubyonrails.org/2022/5/9/Rails-7-0-3-6-1-6-6-0-5-and-5-2-8-have-been-released)
 
 - Postgresql [13](https://www.postgresql.org/about/news/postgresql-13-released-2077/)
 
@@ -46,7 +46,7 @@ The app can be run in both local and via Docker.
   
 
 ```bash
-git@github.com:tarique313/campaign-api.git
+git clone git@github.com:organization/project-name.git
 ```
 
   
@@ -116,4 +116,33 @@ docker-compose -f docker-compose.yml run web rails db:create db:migrate
 ```
 ```bash
 docker-compose -f docker-compose.yml up -d
+```
+
+### Test the API
+##
+###  Campaign API
+##### 1. Create a Campaign
+```
+POST /api/v1/campaigns
+```
+##### 2. Getting the List of Campaigns
+```
+GET /api/v1/campaigns
+```
+##### 3. Getting a Single Campaign
+```
+GET /api/v1/campaigns/1
+```
+##### 4. Update a Campaigns
+```
+PUT /api/v1/campaigns/1
+```
+###  Investment API
+##### 1. Create a Investment
+```
+POST /api/v1/campaigns/1/investments/
+```
+##### 2. Getting the List of Investments of a Campaign
+```
+GET /api/v1/campaigns/1/investments/
 ```
