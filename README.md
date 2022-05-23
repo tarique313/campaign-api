@@ -129,24 +129,36 @@ rspec
 ```
 POST /api/v1/campaigns
 ```
+![Screenshot 2022-05-23 165407](https://user-images.githubusercontent.com/2160924/169818682-1a7d8b98-3dbd-40a8-9ff3-374974d616cd.png)
+
 ##### 2. Getting the List of Campaigns
 ```
 GET /api/v1/campaigns
 ```
+![Get all Campaigns](https://user-images.githubusercontent.com/2160924/169819266-e79aa4c1-c514-4881-9c7c-f03e9a753ab8.png)
+
 ##### 3. Getting a Single Campaign
 ```
 GET /api/v1/campaigns/1
 ```
+![get a campaign](https://user-images.githubusercontent.com/2160924/169819361-f3bd3836-fcc0-4b14-8cfe-7f0774d0f3d7.png)
+
 ##### 4. Update a Campaigns
 ```
 PUT /api/v1/campaigns/1
 ```
+![Update a Campaign](https://user-images.githubusercontent.com/2160924/169819430-42d1346c-a5ff-4d3e-b846-329010a0c4a8.png)
+
 ###  Investment API
 ##### 1. Create a Investment
 ```
 POST /api/v1/campaigns/1/investments/
 ```
+![Create a investment](https://user-images.githubusercontent.com/2160924/169819513-8df79282-1f64-414b-a127-b4b962632bed.png)
+
 ##### 2. Getting the List of Investments of a Campaign
 ```
 GET /api/v1/campaigns/1/investments/
 ```
+![all investments](https://user-images.githubusercontent.com/2160924/169820761-f6677d6f-3fd1-44db-b966-d8899c1bb4fb.png)
+
