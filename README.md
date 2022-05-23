@@ -18,9 +18,9 @@ The setups steps expect following tools installed on the system.
 
 - Docker
 
-- Ruby [3.0.3](https://www.ruby-lang.org/en/news/2021/11/24/ruby-3-0-3-released/)
+- Ruby [3.0.2](https://www.ruby-lang.org/en/news/2021/07/07/ruby-3-0-2-released/)
 
-- Rails [7.0.3](https://rubyonrails.org/2022/5/9/Rails-7-0-3-6-1-6-6-0-5-and-5-2-8-have-been-released)
+- Rails [6](https://edgeguides.rubyonrails.org/6_0_release_notes.html)
 
 - Postgresql [13](https://www.postgresql.org/about/news/postgresql-13-released-2077/)
 

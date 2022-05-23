@@ -1,6 +1,12 @@
 class Api::V1::InvestmentsController < ApplicationController
   before_action :set_campaign
 
+  def index
+    @campaign = Campaign.find(params[:campaign_id])
+    investment = @campaign.investments.all
+    render json: investment
+  end
+
   def create
       investment = @campaign.investments.new(investment_params)
       if investment.save
@@ -10,7 +16,14 @@ class Api::V1::InvestmentsController < ApplicationController
       end
   end
 
+  def show
+    investment = @campaign.investments.find(params[:id])
+    render json: investment
+  end
+
+
   private
+  
   def investment_params
     params.require(:investment).permit(:amount)
   end

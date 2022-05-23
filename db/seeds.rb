@@ -4,7 +4,7 @@
 # Examples:
 #
 campaigns = []
-(1..20).each do |campaign_index|
+(1..50).each do |campaign_index|
   campaigns.push({name: "Campaign_#{campaign_index}",
                   image: "campaign_#{campaign_index}_image.png",
                   target_amount: rand(100..10000),
