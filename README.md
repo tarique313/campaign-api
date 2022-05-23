@@ -119,6 +119,10 @@ docker-compose -f docker-compose.yml up -d
 ```
 
 ### Test the API
+Run the following command to run RSpec tests.
+```ruby
+rspec
+```
 ##
 ###  Campaign API
 ##### 1. Create a Campaign

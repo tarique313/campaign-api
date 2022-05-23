@@ -3,8 +3,8 @@ class Api::V1::InvestmentsController < ApplicationController
 
   def index
     @campaign = Campaign.find(params[:campaign_id])
-    investment = @campaign.investments.all
-    render json: investment
+    investments = @campaign.investments.limit(20).order('id DESC')
+    render json: investments
   end
 
   def create
